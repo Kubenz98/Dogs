@@ -1,0 +1,48 @@
+.body {
+    font-family: lato;
+    font-size: 24px;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.generator {
+    text-align: center;
+
+    &__select, &__input {
+        font-size: 20px;
+    }
+
+    &__input {
+        width: 70px;
+        &-name {
+            margin-right: 10px;
+        }
+    }
+}
+
+.button {
+    width: 150px;
+    padding: 7px 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.user {
+width: 30%;
+}

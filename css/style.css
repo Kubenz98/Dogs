@@ -1,1 +1,48 @@
-/*# sourceMappingURL=style.css.map */
+.body {
+  font-family: lato;
+  font-size: 24px;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.generator {
+  text-align: center;
+}
+.generator__select, .generator__input {
+  font-size: 20px;
+}
+.generator__input {
+  width: 70px;
+}
+.generator__input-name {
+  margin-right: 10px;
+}
+
+.button {
+  width: 150px;
+  padding: 7px 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+.users-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+.user {
+  width: 30%;
+}/*# sourceMappingURL=style.css.map */
