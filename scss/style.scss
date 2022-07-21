@@ -11,7 +11,7 @@
 .generator {
     text-align: center;
 
-    &__select,
+    &__select-gender, &__select-country,
     &__input {
         font-size: 20px;
     }
@@ -27,6 +27,7 @@
 
 .button {
     width: 150px;
+    margin-top: 10px;
     padding: 7px 10px;
     font-size: 18px;
     background-color: transparent;
@@ -45,9 +46,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
 }
 
 .user {

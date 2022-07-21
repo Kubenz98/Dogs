@@ -11,7 +11,7 @@
 .generator {
   text-align: center;
 }
-.generator__select, .generator__input {
+.generator__select-gender, .generator__select-country, .generator__input {
   font-size: 20px;
 }
 .generator__input {
@@ -23,6 +23,7 @@
 
 .button {
   width: 150px;
+  margin-top: 10px;
   padding: 7px 10px;
   font-size: 18px;
   background-color: transparent;
