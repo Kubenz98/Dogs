@@ -1,9 +1,10 @@
 const getUsers = (e) => {
     e.preventDefault();
-    const selectGender = document.querySelector(".generator__select").value;
-    const quantity = document.querySelector(".generator__input").value
+    const selectGender = document.querySelector(".generator__select-gender").value;
+    const quantity = document.querySelector(".generator__input").value;
+    const country = document.querySelector(".generator__select-country").value;
 
-    const url = `https://randomuser.me/api/?results=${quantity}&gender=${selectGender === "both" ? "male,female" : selectGender}`;
+    const url = `https://randomuser.me/api/?results=${quantity}&gender=${selectGender === "both" ? "male,female" : selectGender}&nat=${country}`;
 
 
     fetch(url)
