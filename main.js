@@ -29,7 +29,11 @@ const showUsers = (results) => {
         const item = document.createElement("div");
         item.className = "user";
         name.textContent = `${result.name.title}  ${result.name.first}  ${result.name.last}`;
-        item.innerHTML = `<img src="${result.picture.medium}" class="user__img"> <span class="user__name">${result.name.title}  ${result.name.first}  ${result.name.last}</span> <span class="user__country">country: ${result.location.country}</span> <span class="user__e-mail">e-mail: ${result.email}</span>`;
+        item.innerHTML = `
+        <img src="${result.picture.medium}" class="user__img">
+         <span class="user__name">${result.name.title}  ${result.name.first}  ${result.name.last}</span>
+        <span class="user__country"><i class="fa-solid fa-earth-europe"></i>${result.location.country}</span>
+        <span class="user__e-mail"><i class="fa-regular fa-envelope"></i>${result.email}</span>`;
         usersList.appendChild(item);
     })
 

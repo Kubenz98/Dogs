@@ -39,10 +39,42 @@
 
 .users-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .user {
+  display: grid;
+  margin: 20px;
+  padding: 20px;
+  justify-items: center;
+  font-size: 18px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  border: 1px solid rgb(80, 80, 80);
+  cursor: pointer;
+}
+.user:hover {
+  background-color: rgb(255, 255, 255);
+}
+.user__img {
   width: 30%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  border: 1px solid rgb(165, 165, 165);
+}
+.user__e-mail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa-envelope {
+  display: inline;
+  margin-right: 3px;
+}
+
+.fa-earth-europe {
+  margin-right: 3px;
 }/*# sourceMappingURL=style.css.map */
