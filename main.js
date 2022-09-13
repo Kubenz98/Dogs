@@ -7,7 +7,9 @@ const getUsers = (e) => {
     const url = `https://randomuser.me/api/?results=${quantity}&gender=${selectGender === "both" ? "male,female" : selectGender}&nat=${country}`;
 
 
-    fetch(url)
+    fetch(url, {
+        credentials: 'include'
+    })
         .then(response => {
             if (response.status !== 200) {
                 throw Error("status uneaqual 200");
