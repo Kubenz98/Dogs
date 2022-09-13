@@ -122,3 +122,4 @@ listItems.forEach(item => {
 
 }
 document.querySelector(".generator").addEventListener("submit", getDog);
+alert("People were supposed to be here, but here are dogs. Temporary i don't want to change the repository name.")
