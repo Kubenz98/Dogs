@@ -1,4 +1,5 @@
-# APLIKACJA W PRZEBUDOWIE, API NIE ODPOWIADA
+# People were supposed to be here, but here are dogs. Temporary i don't want to change repository name.
 
-# People
-getting users from randomuser.me with AJAX
+# Dogs
+
+App fetching dogs breeds informations and pictures.

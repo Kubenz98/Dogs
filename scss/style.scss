@@ -11,17 +11,8 @@
 .generator {
     text-align: center;
 
-    &__select-gender, &__select-country,
-    &__input {
+    &__select-breed {
         font-size: 20px;
-    }
-
-    &__input {
-        width: 70px;
-
-        &-name {
-            margin-right: 10px;
-        }
     }
 }
 
@@ -36,54 +27,46 @@
     cursor: pointer;
     transition: 0.2s;
 
-    &:hover {
-        color: white;
+    &:hover{
+    @media (hover: hover) and (pointer: fine) {
         background-color: black;
+        color: white;
     }
 }
-
-.users-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
 }
 
-.user {
-    display: grid;
-    margin: 20px;
-    padding: 20px;
-    justify-items: center;
-    font-size: 18px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 10px;
-    border: 1px solid rgb(80, 80, 80);
-    cursor: pointer;
+.dogs-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 
-    &:hover {
-        background-color: rgb(255, 255, 255);
+    &__dog {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+        max-width: 500px;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 2px 0 black;
+
+        &-img {
+            width: 100%;
+            border-radius: 10%;
+        }
+
+        &-breed {
+            text-align: center;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+
+            &-span {
+                margin-bottom: 10px;
+            }
+        }
     }
-
-    &__img {
-        width: 30%;
-        padding: 5px;
-        margin-bottom: 5px;
-        border-radius: 50%;
-        border: 1px solid rgb(165, 165, 165);
-    }
-
-    &__e-mail {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-}
-
-.fa-envelope {
-    display: inline;
-    margin-right: 3px;
-}
-
-.fa-earth-europe {
-    margin-right: 3px;
 }
