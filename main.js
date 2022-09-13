@@ -68,7 +68,7 @@ await fetch(url)
 
 const addHtml = (dog) => {
 const list = document.querySelector(".dogs-list");
-list.innerHTML = "";
+// list.innerHTML = "";
 
 const newListItem = document.createElement('li');
 const img = document.createElement('img');
@@ -111,6 +111,10 @@ breedGroup.textContent = (dogInfo.breed_group ? "Breed Group: " +dogInfo.breed_g
 temperament.textContent = `Temperament: ${dogInfo.temperament}`;
 lifeSpan.textContent = `Life span: ${dogInfo.life_span}`;
 
+}
+
+
+
 //delete unnecessary items
 const listItems = document.querySelectorAll(".dogs-list__dog-info-span");
 listItems.forEach(item => {
@@ -120,6 +124,6 @@ listItems.forEach(item => {
 })
 
 
-}
 document.querySelector(".generator").addEventListener("submit", getDog);
+
 alert("People were supposed to be here, but here are dogs. Temporary i don't want to change the repository name.")
