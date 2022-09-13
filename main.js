@@ -1,3 +1,4 @@
+alert("API NIE ODPOWIADA, APLIKACJA W PRZEBUDOWIE")
 const getUsers = (e) => {
     e.preventDefault();
     const selectGender = document.querySelector(".generator__select-gender").value;
