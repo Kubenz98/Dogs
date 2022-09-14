@@ -72,11 +72,11 @@ export default class Html_service {
             this.loader.classList.remove("dogs-list__lds-roller-disabled");
         })
     }
-        deleteSpans(spans){
-                    spans.forEach(item => {
-                if (item.textContent === "") {
-                    item.remove();
-                }
+    deleteSpans(spans) {
+        spans.forEach(item => {
+            if (item.textContent === "") {
+                item.remove();
+            }
         })
     }
 }

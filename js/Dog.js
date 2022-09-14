@@ -52,7 +52,7 @@ export default class Dog {
     }
     getDogImage(dog) {
         const url = `https://api.thedogapi.com/v1/images/search?breed_id=${dog.id}`;
-        
+
 
         fetch(url)
             .then((response) => {
@@ -62,12 +62,10 @@ export default class Dog {
             })
             .then((response) => {
                 const img = new Image()
-                // const addContent = this.htmlService.addContentToHtml;
                 const that = this;
                 img.onload = function () {
-                    // addContent([img, dog])
                     that.htmlService.addContentToHtml([img, dog])
-                    
+
                 }
                 img.src = response[0].url
             })
@@ -76,5 +74,3 @@ export default class Dog {
             })
     }
 }
-
-// alert("People were supposed to be here, but here are dogs. Temporary i don't want to change the repository name.");
