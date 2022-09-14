@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,36 @@
     <title>Dogs</title>
     <script src="https://kit.fontawesome.com/74e6b67c69.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="body">
     <div class="wrap">
-    <form action="" class="generator">
-        <label class="generator__input-breed">breed:
-            <select class="generator__select-breed">
-            </select>
-        </label>
-        <button class="button">Get dog</button>
-    </form>
-    <ul class="dogs-list">
-    </ul>
-</div>
-    <script src="main.js"></script>
+        <form action="" class="generator">
+            <label class="generator__input-breed">Select breed:
+                <select class="generator__select-breed">
+                </select>
+            </label>
+            <button class="button">Get dog</button>
+        </form>
+        <ul class="dogs-list">
+            <div class="dogs-list__lds-roller dogs-list__lds-roller-disabled">
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+                <div class="dogs-list__lds-roller-dot"></div>
+            </div>
+        </ul>
+    </div>
+    <script src="js/main.js" type="module"></script>
 </body>
+
 </html>
