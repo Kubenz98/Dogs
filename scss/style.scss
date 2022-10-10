@@ -14,6 +14,7 @@
 
     &__input-breed {
         font-weight: 700;
+        color: #121212;
     }
 
     &__select-breed {
@@ -27,14 +28,15 @@
     padding: 7px 10px;
     font-size: 18px;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid #121212;
     border-radius: 10px;
+    color: #121212;
     cursor: pointer;
     transition: 0.2s;
 
     &:hover {
         @media (hover: hover) and (pointer: fine) {
-            background-color: black;
+            background-color: #121212;
             color: white;
         }
     }
@@ -54,7 +56,7 @@
         justify-items: center;
         align-items: center;
         border: 1px solid #ccc;
-        box-shadow: 0 0 2px 0 black;
+        box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 
         &-img {
             margin-top: 20px;
